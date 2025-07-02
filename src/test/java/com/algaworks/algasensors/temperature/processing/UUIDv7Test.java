@@ -1,12 +1,11 @@
 package com.algaworks.algasensors.temperature.processing;
 
-import com.fasterxml.uuid.Generators;
-import com.fasterxml.uuid.impl.TimeBasedEpochRandomGenerator;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.UUID;
 
-public class UUIDv7Test {
+class UUIDv7Test {
 
     @Test
     void shouldGenerateUUIDv7() {
@@ -19,5 +18,7 @@ public class UUIDv7Test {
         System.out.println(uuid2);
         System.out.println(uuid3);
         System.out.println(uuid4);
+
+        Assertions.assertNotEquals(uuid1, uuid2);
     }
 }
