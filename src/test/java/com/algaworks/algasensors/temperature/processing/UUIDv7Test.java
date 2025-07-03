@@ -1,5 +1,6 @@
 package com.algaworks.algasensors.temperature.processing;
 
+import com.algaworks.algasensors.temperature.processing.common.IdGenerator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
