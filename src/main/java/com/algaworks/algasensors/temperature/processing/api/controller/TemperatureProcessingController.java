@@ -34,7 +34,7 @@ public class TemperatureProcessingController {
                 .id(IdGenerator.generateTimeBasedUUID())
                 .sensorId(sensorId)
                 .registeredAt(OffsetDateTime.now())
-                .value(temperature)
+                .temperature(temperature)
                 .build();
 
         log.info(logOutput.toString());

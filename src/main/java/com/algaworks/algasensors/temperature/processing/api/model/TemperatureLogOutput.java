@@ -14,6 +14,6 @@ public class TemperatureLogOutput {
     private UUID id;
     private TSID sensorId;
     private OffsetDateTime registeredAt;
-    private Double value;
+    private Double temperature;
 
 }
