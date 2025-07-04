@@ -39,4 +39,5 @@ public class TemperatureProcessingController {
 
         log.info(logOutput.toString());
     }
+
 }
