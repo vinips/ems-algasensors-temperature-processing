@@ -14,8 +14,7 @@ public class RabbitMQConfig {
 
     public static final String FANOUT_EXCHANGE_NAME = "temperature-processing.temperature.received.v1.e";
 
-
-    //Esse Bean é necessario para converter um Objeto complexo (TemperatureLogOutput por exemplo)
+    //Esse Bean é necessario para converter um Objeto complexo (TemperatureLogData por exemplo)
     //Sem esse bean ele nao consegue converter e da erro na hora de enviar para fila.
     @Bean
     public Jackson2JsonMessageConverter jackson2JsonMessageConverter(ObjectMapper objectMapper) {
